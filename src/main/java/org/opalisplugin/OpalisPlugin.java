@@ -4,7 +4,17 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.opalisplugin.commands.*;
+import org.opalisplugin.commands.Ender;
+import org.opalisplugin.commands.Fly;
+import org.opalisplugin.commands.Furnace;
+import org.opalisplugin.commands.Seeinv;
+import org.opalisplugin.commands.alert;
+import org.opalisplugin.commands.craft;
+import org.opalisplugin.commands.feed;
+import org.opalisplugin.commands.heal;
+import org.opalisplugin.commands.spawn;
 import org.opalisplugin.events.*;
+import org.opalisplugin.util.cutil.*;
 
 import java.util.List;
 
@@ -24,17 +34,32 @@ public final class OpalisPlugin extends JavaPlugin {
         System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
 
 
-        // cuitl getCommand("spawn").setExecutor(new spawn());
-        getCommand("feed").setExecutor(new feed()); // A ajouter cutil
-        getCommand("furnace").setExecutor(new Furnace()); // cutil
-        getCommand("seeinv").setExecutor(new Seeinv()); // cutil
-        getCommand("ec").setExecutor(new Ender()); // cutil
-        getCommand("fly").setExecutor(new Fly()); // cutil
+        getCommand("spawn").setExecutor(new spawn());
+        getCommand("feed").setExecutor(new feed());
+        getCommand("furnace").setExecutor(new Furnace());
+        getCommand("seeinv").setExecutor(new Seeinv());
+        getCommand("ec").setExecutor(new Ender());
+        getCommand("fly").setExecutor(new Fly());
         getCommand("heal").setExecutor(new heal());
         getCommand("craft").setExecutor(new craft());
         getCommand("credits").setExecutor(new credits());
         getCommand("alert").setExecutor(new alert());
-        getServer().getPluginManager().registerEvents(new ClickOnItemGui(), this);
+        getCommand("a").setExecutor(new org.opalisplugin.util.cutil.alert());
+        getCommand("c").setExecutor(new org.opalisplugin.util.cutil.craft());
+        getCommand("g").setExecutor(new god());
+        getCommand("ug").setExecutor(new ungod());
+        getCommand("e").setExecutor(new enchant()); // à finir
+        getCommand("ech").setExecutor(new enchant_cheat()); // à finir
+        getCommand("en").setExecutor(new org.opalisplugin.util.cutil.Ender());
+        getCommand("fd").setExecutor(new org.opalisplugin.util.cutil.feed());
+        getCommand("fl").setExecutor(new org.opalisplugin.util.cutil.Fly());
+        getCommand("ufl").setExecutor(new unfly());
+        getCommand("fu").setExecutor(new org.opalisplugin.util.cutil.Furnace()); // à finir
+        getCommand("gmc").setExecutor(new gamemodeC());
+        getCommand("gmsp").setExecutor(new gamemodeSP());
+        getCommand("gms").setExecutor(new gamemodeS());
+        getCommand("gma").setExecutor(new gamemodeA());
+        // getServer().getPluginManager().registerEvents(new ClickOnItemGui(), this);
         getServer().getPluginManager().registerEvents(new onDead(), this);
         getServer().getPluginManager().registerEvents(new onJoin(), this);
         getServer().getPluginManager().registerEvents(new onQuit(), this);
