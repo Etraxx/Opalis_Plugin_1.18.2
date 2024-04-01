@@ -7,6 +7,7 @@ E:\Autres\Prog\OpalisPlugin\src\main\java\org\opalisplugin\util\cutil\heal.java
 E:\Autres\Prog\OpalisPlugin\src\main\java\org\opalisplugin\gui\reportGUI.java
 E:\Autres\Prog\OpalisPlugin\src\main\java\org\opalisplugin\gui\rtpGui.java
 E:\Autres\Prog\OpalisPlugin\src\main\java\org\opalisplugin\commands\craft.java
+E:\Autres\Prog\OpalisPlugin\src\main\java\org\opalisplugin\commands\spawn.java
 E:\Autres\Prog\OpalisPlugin\src\main\java\org\opalisplugin\commands\Ender.java
 E:\Autres\Prog\OpalisPlugin\src\main\java\org\opalisplugin\commands\heal.java
 E:\Autres\Prog\OpalisPlugin\src\main\java\org\opalisplugin\util\cutil\Furnace.java
@@ -30,6 +31,7 @@ E:\Autres\Prog\OpalisPlugin\src\main\java\org\opalisplugin\customItems\CustomIte
 E:\Autres\Prog\OpalisPlugin\src\main\java\org\opalisplugin\events\onQuit.java
 E:\Autres\Prog\OpalisPlugin\src\main\java\org\opalisplugin\util\Grades.java
 E:\Autres\Prog\OpalisPlugin\src\main\java\org\opalisplugin\gui\ranksGUI.java
+E:\Autres\Prog\OpalisPlugin\src\main\java\org\opalisplugin\util\cutil\ungod.java
 E:\Autres\Prog\OpalisPlugin\src\main\java\org\opalisplugin\util\cutil\Ender.java
 E:\Autres\Prog\OpalisPlugin\src\main\java\org\opalisplugin\util\text.java
 E:\Autres\Prog\OpalisPlugin\src\main\java\org\opalisplugin\util\cutil\Fly.java
