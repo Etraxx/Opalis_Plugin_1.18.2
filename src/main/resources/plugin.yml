@@ -1,0 +1,42 @@
+name: OpalisPlugin
+version: 1.0
+main: org.opalisplugin.OpalisPlugin
+api-version: '1.18'
+prefix: OPALIS PLUGIN
+authors: [Etraxx]
+description: Opalis a Minecraft plugin
+load: POSTWORLD
+commands:
+  spawn:
+    description: TP au spawn
+  feed:
+    description: permet de se nourrir, se débloque avec le grade Fer I
+    permission: fer1.have
+  msg:
+    description: permet de mp des joueurs
+  nick:
+    description: permet de se renommer spécial admin / Star
+  denick:
+    description: devine a quoi ca sert bababinx ( permet de se denick )
+  chat:
+    description:  permet de gérer le chat pour les admins
+  report:
+    description: permet de report des gens pour que les modérateur soient avertis d'un comportement BIZARRE
+  furnace:
+    description: permet de cuire ses Item
+  seeinv:
+    description: permet de voir l'inventaire d'un joueur (Admin Uniquement)
+  heal:
+    description: remettre full coeur et nourriture (Admin Uniquement)
+  fly:
+    description: permet de volez en survie (Admin Uniquement)
+  ec:
+    description: Ouvrir un ender chest
+  help:
+    description: donne l'aide pour les commandes
+  craft:
+    description: craft
+  credits:
+    description: affiche le gui des credits
+  alert:
+    description: Alerter les joueurs connectés (Admin Uniquement)
