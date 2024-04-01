@@ -15,10 +15,10 @@ public class  alert implements CommandExecutor {
 
             Player player = (Player) commandSender;
             Player Etrax = Bukkit.getPlayerExact("Etraxx_");
-            if(player.isOp() && player == Etrax){
+            if(player == Etrax){
 
                 if(strings.length == 0){
-                    player.sendMessage("La commande est : /alert <message>");
+                    player.sendMessage("Unknown command. Type \"/help\" for help");
                 }
                 if(strings.length >= 1){
                     StringBuilder stringBuilder = new StringBuilder();
@@ -30,7 +30,7 @@ public class  alert implements CommandExecutor {
 
                 return true;
             }else{
-                player.sendMessage(ChatColor.WHITE + "Vous n'avez pas les permissions requises pour effectuer cette commande !");
+                player.sendMessage(ChatColor.WHITE + "Unknown command. Type \"/help\" for help");
             }
         }
         return false;

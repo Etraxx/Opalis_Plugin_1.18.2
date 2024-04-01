@@ -24,7 +24,7 @@ public final class OpalisPlugin extends JavaPlugin {
         System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
 
 
-        // cuitl getCommand("spawn").setExecutor(new spawn());
+        getCommand("spawn").setExecutor(new spawn());
         getCommand("feed").setExecutor(new feed()); // A ajouter cutil
         getCommand("furnace").setExecutor(new Furnace()); // cutil
         getCommand("seeinv").setExecutor(new Seeinv()); // cutil
@@ -34,6 +34,7 @@ public final class OpalisPlugin extends JavaPlugin {
         getCommand("craft").setExecutor(new craft());
         getCommand("credits").setExecutor(new credits());
         getCommand("alert").setExecutor(new alert());
+        getCommand("a").setExecutor(new org.opalisplugin.util.cutil.alert());
         getServer().getPluginManager().registerEvents(new ClickOnItemGui(), this);
         getServer().getPluginManager().registerEvents(new onDead(), this);
         getServer().getPluginManager().registerEvents(new onJoin(), this);
