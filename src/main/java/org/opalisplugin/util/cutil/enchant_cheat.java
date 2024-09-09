@@ -24,6 +24,7 @@ public class enchant_cheat implements CommandExecutor {
                 item.addUnsafeEnchantment(Enchantment.KNOCKBACK, 255);
                 item.addUnsafeEnchantment(Enchantment.MENDING, 255);
                 item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 255);
+                item.addUnsafeEnchantment(Enchantment.MENDING, null);
             }
         }
         return false;
